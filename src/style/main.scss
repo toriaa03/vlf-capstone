@@ -1,0 +1,42 @@
+@import "./homepage.scss";
+@import "./mixins.scss";
+@import "./nav-container.scss";
+@import "./footer.scss";
+@import "./fonts.scss";
+@import "./dropdown.scss";
+
+html {
+    height: 100%;
+    font-size: 62.5%; // 1rem is 10px
+    font-family: 'Fugaz One';
+
+
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    overflow-x: hidden;
+    font-weight: normal;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.app-container {
+    // margin-top: 2rem;
+    overflow: hidden;
+    // display: grid;
+    // justify-items: center;
+    // position: static;
+    min-height: 100%;
+    min-height: 100vh;
+}

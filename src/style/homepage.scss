@@ -1,0 +1,161 @@
+.homepage-content-wrapper {
+    background-color: rgb(255, 255, 255);
+    // position: relative;
+
+    .top-slider {
+        margin-top: 21px;
+    }
+
+    .middle-content {
+        border-top: 1px transparent;
+        
+        
+        .icons-links {
+            display: flex;
+            justify-content: space-between;
+            font-size: 21px;
+            color: #39eba7; 
+            object-fit: fill;
+            transition: 0.5s ease-in-out;
+            
+            
+            .icons {
+                font-size: 30px;
+
+                &:hover {
+                    cursor: pointer;
+                    background: #39eba7;
+                    color: black;
+                    transition: 0.5s ease-in-out;
+                    }
+                }
+                .icon-captions {
+                    margin: 180px;
+                }
+            }
+        }
+    
+
+    .column-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-family: 'Spectral SC', serif;
+        width: 100vw;
+        height: 100vh;
+
+        .left-column{
+            width: 50vw;
+            
+    
+            .top-squares-wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+    
+                .top-square-image-wrapper {
+                    .image img{
+                        height: 430px;
+                        width: 400px;
+                        margin-left: 26px;
+                        margin-bottom: 4px;
+                        object-fit: cover;
+    
+                    }
+                }
+    
+                .top-square-text-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: -26px;
+                    margin-bottom: 6px;
+                    border: 2px solid rgb(104, 104, 104);
+    
+    
+    
+                    
+                }
+            }
+    
+            .bottom-squares-wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+    
+                .bottom-square-text-wrapper {
+                    margin-top: -7.5px;
+                    margin-left: 8px;
+                    margin-bottom: -10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 2px solid rgb(104, 104, 104);
+    
+                }
+    
+                .bottom-square-image-wrapper {
+    
+                    .image img{
+                        width: 451px;
+                        height: 373px;
+                        // height: calc(100vh - 75px);
+                        margin-top: -6px;
+                        margin-bottom: -13px;
+                        margin-right: -8px;
+                        object-fit: cover;
+                        // margin-left: 0px;
+    
+    
+                    }
+                }
+            }
+        }
+
+        .right-column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+            .input-form{
+                font-size: 21px;
+                margin: 4px;
+
+                & > * {
+                    padding-left: 20px;
+                }
+
+                input {
+                    background: #ece4dc;
+                    border: none;
+                    height: 4em;
+                    width: 700px;
+                    border-radius: 30px;
+                    outline: none;
+                    font-family: 'Spectral SC', serif;
+                    font-weight: 600;
+                    font-size: medium;
+
+            
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                // @include input-element;
+            }
+
+            .homepage-btn {
+                .btn {
+                    border-radius: 21px;
+                    font-family: 'Spectral SC', serif;
+                    font-weight: 600;
+                    cursor: pointer;
+                    height: 41px;
+                    width: 180px;
+                    background: #39eba7;
+                    border: none;
+                    margin: 8px;
+                }
+            }
+        } 
+    }
+}
