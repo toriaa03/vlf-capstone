@@ -5,6 +5,7 @@ import {
   faIcons,
   faComments,
   faPen,
+  faSearch,
   faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -14,4 +15,5 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
     faIcons, 
     faComments, 
     faPen,
+    faSearch,
     faBars);

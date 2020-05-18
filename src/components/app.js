@@ -12,6 +12,8 @@ import NavContainer from './navigation/nav-container';
 import Home from './pages/homepage';
 import About from './pages/about';
 import Explore from './pages/explore';
+import SignIn from './auth/sign-in';
+import SignUp from './auth/sign-up';
 
 // ReactDOM.render(
 //   <Footer/>,
@@ -31,6 +33,8 @@ export default class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/explore" component={Explore} />
             <Route path="/about" component={About} />
+            <Route path="/sign-in" component={SignIn} />
+            <Route path="/register" component={SignUp} />
 
 
           </Switch>

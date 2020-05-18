@@ -55,7 +55,7 @@ export default function() {
                             <div className="icon-captions">
                                 <FontAwesomeIcon icon="comments" />
                                 <div className="icon-caption">
-                                    send a message
+                                    send messages
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ export default function() {
                             <div className="top-square-text-wrapper">
                                 <div className="title"> 
                                     <h1>Victoria Faletui</h1>
-                                    <h2>I might put a logo here instead</h2>
+                                    <h2>Welcome to my blog!</h2>
                                 </div>
                             </div>
 
@@ -88,10 +88,8 @@ export default function() {
 
                             <div className="bottom-square-text-wrapper">
                                 <div className="caption">
-                                    <h2>Welcome to my homepage</h2>
-                                    <p>Here is my homepage. Here is where homepage content needs to go.
-                                    Maybe a small summary about myself..or not.
-                                    I'll probably put a small summary about this blog site.</p>
+                                    <h2>Here is my homepage</h2>
+                                    <p></p>
                                 </div>
                             </div>
                     </div>
@@ -101,6 +99,7 @@ export default function() {
                 <div className="right-column">
                     <div className="input-form">
                         <input
+                        id="input"
                         type="username, email"
                         name="username, email"
                         placeholder="Username or email"
@@ -109,6 +108,7 @@ export default function() {
 
                     <div className="input-form">
                         <input
+                        id="input"
                         type="password"
                         name="password"
                         placeholder="Password"
@@ -117,7 +117,6 @@ export default function() {
                     
                     <div className="homepage-btn">
                         <button className="btn">Log In</button>
-                        <button className="btn">Create an account</button>
                     </div>
                 </div>
             </div>

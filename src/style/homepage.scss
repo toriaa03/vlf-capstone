@@ -30,7 +30,7 @@
                     }
                 }
                 .icon-captions {
-                    margin: 180px;
+                    margin: 196px;
                 }
             }
         }
@@ -117,25 +117,17 @@
 
 
             .input-form{
+
                 font-size: 21px;
                 margin: 4px;
 
                 & > * {
                     padding-left: 20px;
+
+                    &__input {
+                        background: #ece4dc;
+                    }
                 }
-
-                input {
-                    background: #ece4dc;
-                    border: none;
-                    height: 4em;
-                    width: 700px;
-                    border-radius: 30px;
-                    outline: none;
-                    font-family: 'Spectral SC', serif;
-                    font-weight: 600;
-                    font-size: medium;
-
-            
                     &:focus {
                         outline: none;
                     }
@@ -145,6 +137,7 @@
 
             .homepage-btn {
                 .btn {
+                    outline: none;
                     border-radius: 21px;
                     font-family: 'Spectral SC', serif;
                     font-weight: 600;
@@ -154,8 +147,15 @@
                     background: #39eba7;
                     border: none;
                     margin: 8px;
+                    transition: 0.5s ease-in-out;
+
+
+                    &:hover {
+                        box-shadow: 0px 9px 12px #888888;
+                        transition: 0.5s ease-in-out;
+
+                    }
                 }
             }
         } 
     }
-}

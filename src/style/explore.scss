@@ -1,0 +1,26 @@
+.explore-wrapper {
+    height: 100vh;
+    font-family: 'Spectral SC', serif;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+
+    .input-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: -380px;
+        & > * {
+            padding-left: 20px;
+        }
+    }
+
+
+    // .trending-wrapper {
+    //     margin: 80px;
+    //     border-color: black;
+    //     background: black;
+    // }
+}

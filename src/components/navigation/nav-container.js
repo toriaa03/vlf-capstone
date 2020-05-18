@@ -3,7 +3,7 @@ import { withRouter } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import Logo from "../images/logoResize.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import Dropdown from './dropdown';
 
 
 const NavigationComponent = props => {
@@ -19,10 +19,13 @@ const NavigationComponent = props => {
 
  return (
       <div className="nav-wrapper">
-            <div className="nav-link-wrapper">
-                  <NavLink exact to="/">
-                    <img src={Logo} />
-                  </NavLink>
+        <div className="nav-link-wrapper">
+          <div className="logo">
+            <NavLink exact to="/">
+              <img src={Logo} />
+            </NavLink>
+          </div>
+          
                 <div className="nav-links">
                   <NavLink exact to="/" activeClassName="nav-link-active">
                       Home
@@ -38,14 +41,14 @@ const NavigationComponent = props => {
                 
 
                   <div className="dropdown-wrapper">
-                    <button className="dropdown-btn">
+                    <Dropdown  className="dropdown-btn" />
+                    {/* <button className="dropdown-btn"> */}
                       {/* <ul className="dd-list">
                         <li className="dd-list-item"></li>
                         <li className="dd-list-item"></li>
                         <li className="dd-list-item"></li>
                       </ul> */}
-                      <FontAwesomeIcon icon="bars" />
-                    </button>
+                    {/* </button> */}
                 </div>
               </div>
             </div>
